@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  backend-proyectos-ea1:
+    container_name: backend-proyectos
+    image: backend-proyectos:v1
+    build: 
+      context: .
+    ports:
+      - 4001:4001
+    networks:
+      - backend-proyectos-ea1
+networks:
+  backend-proyectos-ea1:  
