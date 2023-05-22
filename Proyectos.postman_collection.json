@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "3ad4ec8c-11e0-4504-ac49-0976cf9dbcac",
+		"name": "Proyectos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26297297",
+		"_collection_link": "https://iudinventory.postman.co/workspace/Team-Workspace~b003879c-4c14-4ed0-8736-0c6c973f50f6/collection/26297297-3ad4ec8c-11e0-4504-ac49-0976cf9dbcac?action=share&creator=26297297&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "tipoProyectos",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"articulo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/tipoProyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"tipoProyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4001/api/tipoProyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"tipoProyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Ensayo 1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/tipoProyectos/64693ce0746e56c1bcac7000",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"tipoProyectos",
+								"64693ce0746e56c1bcac7000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Maicol Deere\",\r\n  \"email\": \"maicoldeere@gmail.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4001/api/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Don Deere\",\r\n  \"email\": \"dondeere@gmail.com\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/clientes/64693f63746e56c1bcac700a",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"clientes",
+								"64693f63746e56c1bcac700a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "universidades",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Universidad UDEA\",\r\n  \"direccion\": \"Calle Principal 12 \",\r\n  \"telefono\": \"1234560\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/universidades",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"universidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4001/api/universidades",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"universidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Universidad IU Digital\",\r\n  \"direccion\": \"Calle Principal 110\",\r\n  \"telefono\": \"123450\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/universidades/64693fdd746e56c1bcac700f",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"universidades",
+								"64693fdd746e56c1bcac700f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "etapaProyectos",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Etapa 2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/etapaProyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"etapaProyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4001/api/etapaProyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"etapaProyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Etapa Desarrollo\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/etapaProyectos/64694078746e56c1bcac7018",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"etapaProyectos",
+								"64694078746e56c1bcac7018"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "proyectos",
+			"item": [
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": \"API-REST-2\",\r\n  \"titulo\": \"Api Rest Docker\",\r\n  \"fechaInicio\": \"2023-05-15\",\r\n  \"fechaEntrega\": \"2023-06-15\",\r\n  \"valor\": 1000,\r\n  \"cliente\": \"64693f20746e56c1bcac7007\",\r\n  \"tipoProyecto\": \"API REST\",\r\n  \"universidad\": \"Universidad IU Digital\",\r\n  \"etapa\": \"64694078746e56c1bcac7018\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4002/api/proyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4002/api/proyectos",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": \"API-REST-2\",\r\n  \"titulo\": \"Api Rest Docker (actualizado)\",\r\n  \"fechaInicio\": \"2023-05-15\",\r\n  \"fechaEntrega\": \"2023-06-15\",\r\n  \"valor\": 1500,\r\n  \"cliente\": \"64693f20746e56c1bcac7007\",\r\n  \"tipoProyecto\": \"API REST\",\r\n  \"universidad\": \"Universidad IU Digital\",\r\n  \"etapa\": \"64694078746e56c1bcac7018\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4002/api/proyectos/64694ca9c73968abc58fdcbb",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"api",
+								"proyectos",
+								"64694ca9c73968abc58fdcbb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
